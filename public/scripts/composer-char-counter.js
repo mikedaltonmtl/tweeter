@@ -6,7 +6,7 @@ $(document).ready(function() {
     const maxlength = 140;
     const currentLength = $( this ).val().length;
 
-    // select counter relative to the textarea (this)
+    // select counter node relative to the textarea (this)
     const outputCounter = $( this ).parent().find( "output.counter" );
     outputCounter.text(maxlength - currentLength);
 
