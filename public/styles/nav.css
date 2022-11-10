@@ -26,4 +26,9 @@
  nav div {
   padding-top: 0.5em;
  }
+
+ #new-tweet-arrow {
+  color: red;
+  text-align: center;
+ }
  

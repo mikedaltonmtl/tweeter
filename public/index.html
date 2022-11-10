@@ -33,40 +33,32 @@
     <nav>
       <span>tweeter</span>
       <div>
-        <div><strong>Write</strong> a new tweet</div>
-        <div style="color: red; text-align: center;"><i class="fa-solid fa-angles-down"></i></div>
+        <p><strong>Write</strong> a new tweet</p>
+        <i class="fa-solid fa-angles-down"></i>
+        <!-- <div style="color: red; text-align: center;"><i class="fa-solid fa-angles-down"></i></div> -->
       </div>
     </nav>
 
+    <!-- Header showing user avatar & name -->
     <header>
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
+      <div><img src="/images/profile-hex.png"></div>
+      <div><h2>Your Name</h2></div>
     </header>
-
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h1>gogogogogogogogoggo</h1>
-      <p>lispon blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-    </p>
-    <h2>gogogogogogogogoggo</h2>
-
-  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah
-    </p>
-  <p> blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-      blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+      <section class="new-tweet">
+        <!-- <h2>Compose Tweet</h2> -->
+        <form action="/tweets/" method="POST" enctype="application/x-www-form-urlencoded; charset=utf-8">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
     </main>
+
   </body>
 </html>

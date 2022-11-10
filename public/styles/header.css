@@ -1,5 +1,5 @@
 /*
- * Header Element
+ * Header Element containing user avatar and name
  */
 header {
   height: 520px;
@@ -9,6 +9,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #a0a8bd;
+  background-color: #f4f1ec;
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
