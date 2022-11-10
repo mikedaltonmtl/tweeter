@@ -24,11 +24,12 @@
  }
 
  nav div {
-  padding-top: 0.5em;
+  padding-top: 1.5em;
+  text-align: center;
  }
 
  #new-tweet-arrow {
+  padding-top: 0.5em;
   color: red;
-  text-align: center;
  }
  
