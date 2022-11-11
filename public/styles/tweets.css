@@ -10,6 +10,11 @@ article.tweet {
   padding-top: 10px;
 }
 
+article.tweet:hover {
+  box-shadow: 7px 7px rgb(194, 193, 230);
+}
+
+/* user avatar, name, handle */
 article.tweet header {
   display: flex;
   flex-direction: row;
@@ -27,6 +32,7 @@ p.handle {
   color: #cdc3f7;
 }
 
+/* text content of tweet */
 article.tweet p.tweet-text {
   font-size: 26px;
   width: 97%;
@@ -48,8 +54,18 @@ article.tweet footer {
   padding-top: 15px;
 }
 
+/* time since tweet was posted */
 article.tweet footer p {
   flex-grow: 1;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+/* icons: flag, retweet, like */
+article.tweet footer i {
+  color: rgb(63, 51, 155);
+}
+
+article.tweet footer i:hover {
+  color: rgb(176, 139, 91);
 }
