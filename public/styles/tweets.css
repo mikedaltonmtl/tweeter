@@ -1,0 +1,55 @@
+/*
+ * Tweets section <article class="tweet">
+ */
+article.tweet {
+  background-color: inherit;
+  border: 5px solid #545149;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+p.handle {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 26px;
+  font-weight: bold;
+  color: #cdc3f7;
+}
+
+article.tweet p.tweet-text {
+  font-size: 26px;
+  width: 97%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+}
+
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 18px;
+  border-top: 5px solid #545149; 
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+article.tweet footer p {
+  flex-grow: 1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
