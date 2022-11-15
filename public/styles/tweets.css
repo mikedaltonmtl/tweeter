@@ -39,7 +39,7 @@ article.tweet p.tweet-text {
   width: 97%;
   margin: 0 auto;
   padding-bottom: 50px;
-
+  word-wrap: break-word;
 }
 
 article.tweet footer {
