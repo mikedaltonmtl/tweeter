@@ -5,9 +5,17 @@
  */
 $(document).ready(function() {
 
+  // escape any 'unsafe' characters from the tweet content
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweetData) {
-    // use timeago to convert timestamp into 'time since...)
+    // use timeago to convert timestamp into 'time since...
     const timeSinceTweet = timeago.format(tweetData.created_at);
+    const safeTweetContent = escape(tweetData.content.text);
 
     const tweet = $(`
       <article class="tweet">
@@ -16,7 +24,7 @@ $(document).ready(function() {
           <p>${tweetData.user.name}</p>
           <p class="handle">${tweetData.user.handle}</p>
         </header>
-        <p class="tweet-text">${tweetData.content.text}</p>
+        <p class="tweet-text">${safeTweetContent}</p>
         <footer>
           <p>${timeSinceTweet}</p>
           <i class="fa-solid fa-flag"></i>
@@ -72,7 +80,9 @@ $(document).ready(function() {
       return;
     }
 
+    // convert form data into key-value-pair string
     const $formString = $( "form" ).serialize();
+
     // $.post parameters: url, data to submit, success callback
     $.post('/tweets/', $formString, function() {
       console.log('success (post): data sent:', $formString);
