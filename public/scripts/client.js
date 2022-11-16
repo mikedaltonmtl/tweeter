@@ -13,9 +13,9 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(tweetData) {
+    const safeTweetContent = escape(tweetData.content.text);
     // use timeago to convert timestamp into 'time since...
     const timeSinceTweet = timeago.format(tweetData.created_at);
-    const safeTweetContent = escape(tweetData.content.text);
 
     const tweet = $(`
       <article class="tweet">
@@ -68,15 +68,22 @@ $(document).ready(function() {
   $( "#new-tweet-form" ).submit(function(event) { 
     event.preventDefault();
     const $tweetText = $( this ).children( "textarea#tweet-text" ).val();
+    // clear and hide any outstanding error (validation) messages
+    $( "p#validation-error" ).empty();
+    $( "p#validation-error" ).slideUp('fast');
 
     // validate for character length
     if ($tweetText.length > 140) {
-      alert('Sorry, your tweet exceeds the maximum length (140 chars)');
+      const errorText = '<i class="fa-solid fa-triangle-exclamation"></i> Sorry, your tweet exceeds the maximum length (140 chars)';
+      $( "p#validation-error" ).append(errorText);
+      $( "p#validation-error" ).slideDown('slow');
       return;
     }
     // validate for empty or null tweet
     if ($tweetText === "" || $tweetText === null) {
-      alert('Please compose your tweet to submit');
+      const errorText = '<i class="fa-solid fa-triangle-exclamation"></i> Please compose your tweet to be submitted';
+      $( "p#validation-error" ).append(errorText);
+      $( "p#validation-error" ).slideDown('slow');
       return;
     }
 
@@ -96,6 +103,8 @@ $(document).ready(function() {
       // loadTweets();
     });
   });
+
+  
 
 
 }); // end of $(document).ready

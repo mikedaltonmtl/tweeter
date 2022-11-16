@@ -31,6 +31,18 @@ label {
   font-weight: bold;
 }
 
+p#validation-error {
+  display: none;
+  color: #c33;
+  background-color: #fee;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .counter {
   font-family: 'Bungee', sans-serif;
   margin-right: 10px;
