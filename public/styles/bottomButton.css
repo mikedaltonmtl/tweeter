@@ -1,0 +1,19 @@
+main i#bottom-button {
+  color: red;
+  border: 15px solid transparent;
+  position: fixed;
+  bottom: 80px;
+  right: 65px;
+  z-index: 999;
+  transition: visibility 0.3s;
+  visibility: hidden;
+}
+
+main i#bottom-button.show {
+  visibility: visible;
+}
+
+main i#bottom-button:hover {
+  cursor: pointer;
+  color: rgb(230, 54, 54);
+}
