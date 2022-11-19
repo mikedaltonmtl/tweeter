@@ -98,10 +98,15 @@ $(document).ready(function() {
       $( this ).trigger('reset');
       $( this ).children( "textarea#tweet-text" ).trigger('input');
       loadNewTweet();
-      // this below might be a better solution when we switch to SQL backend?
-      // $( "#tweets-container" ).empty();
-      // loadTweets();
+      // scroll down to show the new tweet
+      $( "html, body" ).animate({ scrollTop: $(document).height() }, 1000);
     });
+  });
+
+  // clear any validation messages when user focuses on textbox
+  $( "#tweet-text" ).focus(function(event) {
+    $( "p#validation-error" ).empty();
+    $( "p#validation-error" ).slideUp('slow');
   });
 
 }); // end of $(document).ready
