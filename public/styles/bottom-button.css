@@ -1,9 +1,12 @@
+/*
+ * 'Back to Top' button with fixed position at bottom-right of page
+ */
 main i#bottom-button {
   color: red;
   border: 15px solid transparent;
   position: fixed;
-  bottom: 80px;
-  right: 65px;
+  bottom: 5px;
+  right: 0px;
   z-index: 999;
   transition: visibility 0.3s;
   visibility: hidden;
