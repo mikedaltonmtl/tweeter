@@ -14,15 +14,23 @@ This project is part of my learnings at Lighthouse Labs.
 
 - The only deviation from the original requirements is that a validation error message will be cleared when the user clicks back into the 'New Tweet' textarea (public/scripts/client.js lines 102-106).  I found this to give a better experience than it remaining in view while the user is editing the tweet.  As per the requirements, it also disappears if the 'Submit Tweet' button is clicked again and slides back in to view if the error remains.
 
-Screenshot of the 'Desktop Style', with the user profile and tweets side-by-side :
-![""](./docs/landscape.jpg)
+* Screenshot of the 'Desktop Style', with the user profile and tweets side-by-side :
 
-Screenshot of the default view for smaller screens, all information is contained in one column :
-![""](./docs/portrait.jpg)
+<div style="width:300px">
+  ![""](./docs/landscape.jpg)
+</div>
 
-Screenshot of the print preview style, only the tweets themselves will be printed :
-![""](./docs/print.jpg)
+* Screenshot of the default view for smaller screens, all information is contained in one column :
 
+<div style="width:300px">
+  ![""](./docs/portrait.jpg)
+</div>
+
+* Screenshot of the print preview style, only the tweets themselves will be printed :
+
+<div style="width:300px">
+  ![""](./docs/print.jpg)
+</div>
 
 ## Getting Started
 
