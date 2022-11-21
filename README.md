@@ -16,21 +16,19 @@ This project is part of my learnings at Lighthouse Labs.
 
 * Screenshot of the 'Desktop Style', with the user profile and tweets side-by-side :
 
-<div style="width:300px">
-  ![""](./docs/landscape.jpg)
-</div>
+
+!["Desktop Style"](./docs/landscape.jpg)
+
 
 * Screenshot of the default view for smaller screens, all information is contained in one column :
 
-<div style="width:300px">
-  ![""](./docs/portrait.jpg)
-</div>
+!["Small Style"](./docs/portrait.jpg)
+
 
 * Screenshot of the print preview style, only the tweets themselves will be printed :
 
-<div style="width:300px">
-  ![""](./docs/print.jpg)
-</div>
+!["Print Style"](./docs/print.jpg)
+
 
 ## Getting Started
 
