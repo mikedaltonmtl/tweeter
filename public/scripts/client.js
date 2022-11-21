@@ -48,7 +48,6 @@ $(document).ready(function() {
   // fetch the tweets from the http://localhost:8080/tweets page with a AJAX, GET request
   const loadTweets = function() {
     $.getJSON('/tweets', function(data) {
-      console.log('success (get), data:', data);
       renderTweets(data);
     });
   };
@@ -58,14 +57,13 @@ $(document).ready(function() {
   // this function will probably be defunct once we start using SQL tweets...
   const loadNewTweet = function() {
     $.getJSON('/tweets', function(data) {
-      console.log('loadNewTweet - success (get), data:', data);
       const newTweet = [data[data.length - 1]];
       renderTweets(newTweet);
     });
   };
 
   // event handler for a new tweet submission
-  $( "#new-tweet-form" ).submit(function(event) { 
+  $( "#new-tweet-form" ).submit(function(event) {
     event.preventDefault();
     const $tweetText = $( this ).children( "textarea#tweet-text" ).val();
     // clear and hide any outstanding error (validation) messages
@@ -91,22 +89,20 @@ $(document).ready(function() {
     const $formString = $( "form" ).serialize();
 
     // $.post parameters: url, data to submit, success callback
-    $.post('/tweets/', $formString, function() {
-      console.log('success (post): data sent:', $formString);
+    $.post('/tweets/', $formString, function(){
+      // asyn function to wait for post to complete...
     })
-    .then(() => {
-      $( this ).trigger('reset');
-      $( this ).children( "textarea#tweet-text" ).trigger('input');
-      loadNewTweet();
-      // scroll down to show the new tweet
-      // $( "html, body" ).animate({ scrollTop: $(document).height() }, 1000);
-    });
+      .then(() => {
+        $( this ).trigger('reset');
+        $( this ).children( "textarea#tweet-text" ).trigger('input');
+        loadNewTweet();
+      });
   });
 
   // clear any validation messages when user focuses on textbox
-  $( "#tweet-text" ).focus(function(event) {
+  $( "#tweet-text" ).focus(function() {
     $( "p#validation-error" ).empty();
     $( "p#validation-error" ).slideUp('slow');
   });
 
-}); // end of $(document).ready
+});

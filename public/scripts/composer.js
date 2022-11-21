@@ -4,7 +4,7 @@ $(document).ready(function() {
   const scrollToTop = function() {
     $( "html, body" ).animate({ scrollTop: 0 }, "slow");
     $( "#tweet-text" ).focus();
-  }
+  };
 
   // scroll to top from nav bar > new tweet
   $( "nav div" ).click(() => scrollToTop());
@@ -14,7 +14,7 @@ $(document).ready(function() {
   $bottomBtn.click(() => scrollToTop());
 
   // hide button if already at top of page
-  // scrollTop() returns the number of pixels that are hidden above the scrollable area
+  // scrollTop() returns the number of pixels hidden above the scrollable area
   $(window).scroll(() => {
     if ($(window).scrollTop() > 100) {
       $bottomBtn.addClass('show');
@@ -23,4 +23,4 @@ $(document).ready(function() {
     }
   });
 
-}); // end of $(document).ready  
+});
