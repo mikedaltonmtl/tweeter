@@ -2,13 +2,13 @@
  * Header Element containing user avatar and name
  */
 header.userHeader {
-  height: 520px;
-  padding-top: 120px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 520px;
+  padding-top: 120px;
+  width: 100%;
   background-color: #f4f1ec;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }

@@ -28,3 +28,19 @@ $tweet-box-shadow: 7px 7px rgb(194, 193, 230);
 $tweet-handle-color: #cdc3f7;
 $tweet-icon-color: rgb(63, 51, 155);
 $tweet-icon-hover-color: rgb(176, 139, 91);
+
+// use flex to align vertically (header element)
+@mixin vertical-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// fix position of bottom button
+@mixin fix-position($bottom: bottom, $right: right) {
+  position: fixed;
+  bottom: $bottom;
+  right: $right;
+  z-index: 999;
+}

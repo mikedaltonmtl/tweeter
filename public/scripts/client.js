@@ -41,7 +41,7 @@ $(document).ready(function() {
       // calls createTweetElement for each tweet
       const tweetHtml = createTweetElement(tweet);
       // takes return value and appends it to the tweets container
-      $( "#tweets-container" ).append(tweetHtml);
+      $( "#tweets-container" ).prepend(tweetHtml);
     }
   };
 
@@ -99,7 +99,7 @@ $(document).ready(function() {
       $( this ).children( "textarea#tweet-text" ).trigger('input');
       loadNewTweet();
       // scroll down to show the new tweet
-      $( "html, body" ).animate({ scrollTop: $(document).height() }, 1000);
+      // $( "html, body" ).animate({ scrollTop: $(document).height() }, 1000);
     });
   });
 

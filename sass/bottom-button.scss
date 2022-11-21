@@ -6,10 +6,7 @@
 main i#bottom-button {
   color: partial.$arrow-button-color;
   border: 15px solid transparent;
-  position: fixed;
-  bottom: 5px;
-  right: 0px;
-  z-index: 999;
+  @include partial.fix-position(5px, 0px);
   transition: visibility 0.3s;
   visibility: hidden;
 }
