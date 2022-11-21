@@ -16,13 +16,11 @@ nav {
   left: 0;
   z-index: 999;
 }
-
 nav span {
   font-family: "Bungee", sans-serif;
   font-size: xx-large;
   padding-top: 1.5em;
 }
-
 nav div {
   padding-top: 1.5em;
   text-align: center;
@@ -32,4 +30,9 @@ nav div {
 #new-tweet-arrow {
   padding-top: 0.5em;
   color: red;
+}
+
+#new-tweet-arrow:hover {
+  padding-top: 0.5em;
+  color: rgb(230, 54, 54);
 }

@@ -17,22 +17,26 @@ nav {
   top: 0;
   left: 0;
   z-index: 999;
-}
 
-nav span {
-  font-family: partial.$font-logo;
-  font-size: xx-large;
-  padding-top: 1.5em;
-}
+  span {
+    font-family: partial.$font-logo;
+    font-size: xx-large;
+    padding-top: 1.5em;
+  }
 
-nav div {
-  padding-top: 1.5em;
-  text-align: center;
-  cursor: pointer;
+  div {
+    padding-top: 1.5em;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 
 #new-tweet-arrow {
   padding-top: 0.5em;
   color: partial.$arrow-button-color;
 }
- 
+
+#new-tweet-arrow:hover {
+  padding-top: 0.5em;
+  color: partial.$arrow-button-hover-color;
+}
