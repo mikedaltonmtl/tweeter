@@ -1,9 +1,10 @@
 /*
  * Tweets section <article class="tweet">
  */
+@use 'partial';
+
 article.tweet {
-  background-color: inherit;
-  border: 5px solid #545149;
+  border: 5px solid partial.$primary-color;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -12,7 +13,7 @@ article.tweet {
 }
 
 article.tweet:hover {
-  box-shadow: 7px 7px rgb(194, 193, 230);
+  box-shadow: partial.$tweet-box-shadow;
 }
 
 /* user avatar, name, handle */
@@ -30,7 +31,7 @@ p.handle {
   text-align: right;
   font-size: 26px;
   font-weight: bold;
-  color: #cdc3f7;
+  color: partial.$tweet-handle-color;
 }
 
 /* text content of tweet */
@@ -48,7 +49,7 @@ article.tweet footer {
   justify-content: space-between;
   gap: 10px;
   font-size: 18px;
-  border-top: 5px solid #545149; 
+  border-top: 5px solid partial.$primary-color;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -64,9 +65,9 @@ article.tweet footer p {
 
 /* icons: flag, retweet, like */
 article.tweet footer i {
-  color: rgb(63, 51, 155);
+  color: partial.$tweet-icon-color;
 }
 
 article.tweet footer i:hover {
-  color: rgb(176, 139, 91);
+  color: partial.$tweet-icon-hover-color;
 }

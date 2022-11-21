@@ -1,7 +1,9 @@
 /*
  * Navigation bar (always at top)
  */
- nav {
+@use 'partial';
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,28 +11,28 @@
   width: 100%;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  background-color: #4056A1;
-  color: #FFFFFF;
+  color: partial.$nav-font-color;
+  background-color: partial.$nav-background-color;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
- }
+}
 
- nav span {
-  font-family: 'Bungee', sans-serif;
+nav span {
+  font-family: partial.$font-logo;
   font-size: xx-large;
   padding-top: 1.5em;
- }
+}
 
- nav div {
+nav div {
   padding-top: 1.5em;
   text-align: center;
   cursor: pointer;
- }
+}
 
- #new-tweet-arrow {
+#new-tweet-arrow {
   padding-top: 0.5em;
-  color: red;
- }
+  color: partial.$arrow-button-color;
+}
  

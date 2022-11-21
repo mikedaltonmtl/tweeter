@@ -1,6 +1,8 @@
 /*
  * Header Element containing user avatar and name
  */
+@use 'partial';
+
 header.userHeader {
   height: 520px;
   padding-top: 120px;
@@ -9,6 +11,6 @@ header.userHeader {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f4f1ec;
+  background-color: partial.$primary-background-color;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }

@@ -6,7 +6,6 @@
 main.container {
   width: 90%;
   margin: 0 auto;
-  background-color: inherit;
 }
 
 .new-tweet form {
@@ -27,7 +26,7 @@ label {
   resize: none;
   border-top: none;
   border-right: none;
-  border-bottom: 5px solid #545149;
+  border-bottom: 5px solid partial.$primary-color;
   border-left: none;
   font-size: 18px;
   font-weight: bold;
@@ -35,8 +34,8 @@ label {
 
 p#validation-error {
   display: none;
-  color: #c33;
-  background-color: #fee;
+  color: partial.$error-font-color;
+  background-color: partial.$error-background-color;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 5px;
@@ -51,7 +50,7 @@ p#validation-error {
 }
 
 .counter.negative {
-  color: red;
+  color: partial.$neg-counter-color;
 }
 
 #form-footer {
@@ -64,7 +63,7 @@ p#validation-error {
 
 #form-footer button {
   font-family: partial.$font-logo;
-  color: white;
-  background-color: #4056A1;
+  color: partial.$tweet-button-font-color;
+  background-color: partial.$tweet-button-background-color;
   border: none;
 }

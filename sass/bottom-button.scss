@@ -1,8 +1,10 @@
 /*
  * 'Back to Top' button with fixed position at bottom-right of page
  */
+@use 'partial';
+
 main i#bottom-button {
-  color: red;
+  color: partial.$arrow-button-color;
   border: 15px solid transparent;
   position: fixed;
   bottom: 5px;
@@ -18,5 +20,5 @@ main i#bottom-button.show {
 
 main i#bottom-button:hover {
   cursor: pointer;
-  color: rgb(230, 54, 54);
+  color: partial.$back-button-hover-color;
 }

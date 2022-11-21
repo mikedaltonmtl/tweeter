@@ -4,7 +4,6 @@
 main.container {
   width: 90%;
   margin: 0 auto;
-  background-color: inherit;
 }
 
 .new-tweet form {
@@ -62,7 +61,7 @@ p#validation-error {
 
 #form-footer button {
   font-family: "Bungee", sans-serif;
-  color: white;
+  color: #FFFFFF;
   background-color: #4056A1;
   border: none;
 }

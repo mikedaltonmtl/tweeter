@@ -2,7 +2,6 @@
  * Tweets section <article class="tweet">
  */
 article.tweet {
-  background-color: inherit;
   border: 5px solid #545149;
   padding-right: 20px;
   padding-bottom: 20px;
