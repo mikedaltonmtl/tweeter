@@ -3,10 +3,11 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+@use 'partial';
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -18,12 +19,15 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: partial.$font-stack;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+
+
 /*
 Tip: Add some temporary tags like paragraphs or headings (e.g. <p> <h1> <h2>) into main 
 to see how it flows and that it aligns well vertically. We recommend using one of these handy 

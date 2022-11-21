@@ -9,6 +9,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   header.userHeader {
     width: 30%;
     background-image: none;
@@ -17,11 +18,13 @@
     top: 0;
     z-index: 0;
   }
+
   main.container {
     width: 60%;
     padding-top: 140px;
   }
 }
+
 /*
  * Print Styles, only print the tweets: hide the Nav bar and the header
  */
@@ -30,9 +33,11 @@
     margin: 0;
     padding: 0;
   }
+
   nav, header.userHeader, section.new-tweet, main i#bottom-button {
     display: none;
   }
+
   article.tweet {
     page-break-inside: avoid;
   }

@@ -1,6 +1,8 @@
 /*
  * 'What are you humming about?' form to submit new tweet
  */
+@use 'partial';
+
 main.container {
   width: 90%;
   margin: 0 auto;
@@ -44,7 +46,7 @@ p#validation-error {
 }
 
 .counter {
-  font-family: "Bungee", sans-serif;
+  font-family: partial.$font-logo;
   margin-right: 10px;
 }
 
@@ -61,7 +63,7 @@ p#validation-error {
 }
 
 #form-footer button {
-  font-family: "Bungee", sans-serif;
+  font-family: partial.$font-logo;
   color: white;
   background-color: #4056A1;
   border: none;

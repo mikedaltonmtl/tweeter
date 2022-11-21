@@ -1,7 +1,7 @@
 /*
  * Navigation bar (always at top)
  */
-nav {
+ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,21 +15,22 @@ nav {
   top: 0;
   left: 0;
   z-index: 999;
-}
+ }
 
-nav span {
-  font-family: "Bungee", sans-serif;
+ nav span {
+  font-family: 'Bungee', sans-serif;
   font-size: xx-large;
   padding-top: 1.5em;
-}
+ }
 
-nav div {
+ nav div {
   padding-top: 1.5em;
   text-align: center;
   cursor: pointer;
-}
+ }
 
-#new-tweet-arrow {
+ #new-tweet-arrow {
   padding-top: 0.5em;
   color: red;
-}
+ }
+ 
