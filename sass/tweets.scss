@@ -10,64 +10,65 @@ article.tweet {
   padding-left: 20px;
   padding-top: 10px;
   margin-bottom: 20px;
+
+  /* user avatar, name, handle */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+
+    p.handle {
+      flex-grow: 1;
+      text-align: right;
+      font-size: 26px;
+      font-weight: bold;
+      color: partial.$tweet-handle-color;
+    }
+  }
+
+  /* text content of tweet */
+  p.tweet-text {
+    font-size: 26px;
+    width: 97%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    word-wrap: break-word;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 18px;
+    border-top: 5px solid partial.$primary-color;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+
+    /* time since tweet was posted */
+    p {
+      flex-grow: 1;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    /* icons: flag, retweet, like */
+    i {
+      color: partial.$tweet-icon-color;
+    }
+
+    i:hover {
+      color: partial.$tweet-icon-hover-color;
+    }
+  }
+
 }
 
 article.tweet:hover {
   box-shadow: partial.$tweet-box-shadow;
-}
-
-/* user avatar, name, handle */
-article.tweet header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding-bottom: 20px;
-}
-
-p.handle {
-  flex-grow: 1;
-  text-align: right;
-  font-size: 26px;
-  font-weight: bold;
-  color: partial.$tweet-handle-color;
-}
-
-/* text content of tweet */
-article.tweet p.tweet-text {
-  font-size: 26px;
-  width: 97%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  word-wrap: break-word;
-}
-
-article.tweet footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 18px;
-  border-top: 5px solid partial.$primary-color;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-top: 15px;
-}
-
-/* time since tweet was posted */
-article.tweet footer p {
-  flex-grow: 1;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-/* icons: flag, retweet, like */
-article.tweet footer i {
-  color: partial.$tweet-icon-color;
-}
-
-article.tweet footer i:hover {
-  color: partial.$tweet-icon-hover-color;
 }

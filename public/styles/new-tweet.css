@@ -5,18 +5,15 @@ main.container {
   width: 90%;
   margin: 0 auto;
 }
-
-.new-tweet form {
+main.container .new-tweet form {
   display: flex;
   flex-direction: column;
 }
-
-label {
+main.container .new-tweet form label {
   font-weight: bold;
   padding-bottom: 10px;
 }
-
-#tweet-text {
+main.container .new-tweet form #tweet-text {
   width: 100%;
   height: 45px;
   background-color: inherit;
@@ -29,8 +26,7 @@ label {
   font-size: 18px;
   font-weight: bold;
 }
-
-p#validation-error {
+main.container .new-tweet form p#validation-error {
   display: none;
   color: #c33;
   background-color: #fee;
@@ -41,27 +37,23 @@ p#validation-error {
   font-size: 18px;
   font-weight: bold;
 }
-
-.counter {
-  font-family: "Bungee", sans-serif;
-  margin-right: 10px;
-}
-
-.counter.negative {
-  color: red;
-}
-
-#form-footer {
+main.container .new-tweet form #form-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
-#form-footer button {
+main.container .new-tweet form #form-footer button {
   font-family: "Bungee", sans-serif;
   color: #FFFFFF;
   background-color: #4056A1;
   border: none;
+}
+main.container .new-tweet form #form-footer .counter {
+  font-family: "Bungee", sans-serif;
+  margin-right: 10px;
+}
+main.container .new-tweet form #form-footer .counter.negative {
+  color: red;
 }
