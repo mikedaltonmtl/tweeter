@@ -29,11 +29,15 @@
   * {
     margin: 0;
     padding: 0;
+    border: 0;
+    background-color: white;
+    font-size: x-small;
   }
   nav, header.userHeader, section.new-tweet, main i#bottom-button {
     display: none;
   }
   article.tweet {
     page-break-inside: avoid;
+    width: 100%;
   }
 }
