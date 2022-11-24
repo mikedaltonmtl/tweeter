@@ -14,6 +14,8 @@ This project is part of my learnings at Lighthouse Labs.
 
 - The only deviation from the original requirements is that a validation error message will be cleared when the user clicks back into the 'New Tweet' textarea (public/scripts/client.js lines 102-106).  I found this to give a better experience than it remaining in view while the user is editing the tweet.  As per the requirements, it also disappears if the 'Submit Tweet' button is clicked again and slides back in to view if the error remains.
 
+- There is also one deviation from the original style.  The backgound image around the Header has been dropped in the Desktop Style for a plain background.  It was a personal preference that the background looked out of place in this view and that the plain background gives a more uniform design.
+
 * Screenshot of the 'Desktop Style', with the user profile and tweets side-by-side :
 
 
