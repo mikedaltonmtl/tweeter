@@ -96,6 +96,9 @@ $(document).ready(function() {
         $( this ).trigger('reset');
         $( this ).children( "textarea#tweet-text" ).trigger('input');
         loadNewTweet();
+      })
+      .catch((error) => {
+        alert(`Sorry, the following error occured when processing the submission:\n${error.responseText}`);
       });
   });
 
